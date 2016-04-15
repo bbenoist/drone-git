@@ -19,11 +19,6 @@ func main() {
 		os.Exit(1)
 	}
 
-	if true {
-		fmt.Println(plugin.Config.Submodules)
-		return
-	}
-
 	if err := plugin.Exec(); err != nil {
 		fmt.Println(err)
 		os.Exit(1)
